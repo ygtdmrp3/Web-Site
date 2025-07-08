@@ -33,7 +33,9 @@ app.use(express.json({ limit: '20mb' }));
 
 // Cloudinary konfigürasyonu - Unsigned upload için sadece cloud_name gerekli
 cloudinary.config({
-  cloud_name: 'ddkc67grz'
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
 // Multer konfigürasyonu
