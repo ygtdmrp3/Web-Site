@@ -319,7 +319,7 @@ const categorySchema = new mongoose.Schema({
 const Category = mongoose.model('Category', categorySchema);
 
 // MongoDB bağlantısı
-mongoose.connect('mongodb://127.0.0.1:27017/sellweb', {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
