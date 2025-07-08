@@ -13,4 +13,10 @@
     "socket.io-client": "^4.8.1",
     "stripe": "^18.3.0"
   }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
 }
